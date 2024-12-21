@@ -5,10 +5,17 @@ This project is a Flip-Flop Circuit Simulator implemented in C++, designed to si
 
 Each flip flop has a preset (PR), clear (CLR), and clock (CLK) inputs and outputs Q and Qn.
 All were accessed using functions. The inputs have the behavior:
+
 • PR : Q = true, Qn = false
+
 • CLR : Q = false, Qn = true
+
 • D, J, K, T : save the input values
+
 • Clock : set Q and Qn according to the behavior of the flip flop (Qn should always be not Q)
+
 • D : Q = D
+
 • JK : Q = (Q and not K) or (not Q && J)
+
 • T: if T Q = not Q, else unchanged
